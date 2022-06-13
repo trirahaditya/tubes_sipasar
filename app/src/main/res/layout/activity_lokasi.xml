@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lokasi"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_login">
+
+    <ImageView
+        android:layout_width="237dp"
+        android:layout_height="220dp"
+        android:src="@drawable/maps" />
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Pilih Lokasi Anda"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aktifkan lokasi Anda untuk tetap terhubung
+dengan apa yang terjadi di daerah anda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="160dp"
+        android:hint="Zona anda"
+        android:textSize="15sp"/>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Spinner
+        android:id="@+id/spinner_region"
+        android:layout_width="fill_parent"
+        android:entries="@array/Daerah"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        />
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLokasi"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_round"
+        android:text="Lanjutkan" />
+
+
+
+</LinearLayout>

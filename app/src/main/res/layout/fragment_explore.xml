@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exploreFragment"
+    android:id="@+id/framexplore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".explore">
+
+        <TextView
+            style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy"
+            android:text="Temukan Produk"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_search"
+            android:backgroundTint="@color/grey"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:hint="Cari Toko"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="388dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@color/green_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/buahsayur"
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/buah_segar_explore" />
+
+                    <TextView
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buah dan Sayur"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:backgroundTint="@color/gold_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/explore_minyak" />
+
+                    <TextView
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minyak Nabati"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@color/red_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/explore_daging" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daging dan Ikan"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:backgroundTint="@color/purple_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/explore_roti" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roti"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@color/yellow_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/explore_keju" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Olahan Susu dan Keju"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="172dp"
+                android:layout_height="194dp"
+                android:backgroundTint="@color/blue_trans"
+                android:elevation="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="154dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/explore_minuma_kemasan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minuman Kemasan"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

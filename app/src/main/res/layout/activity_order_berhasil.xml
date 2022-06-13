@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order_berhasil"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/orderberhasil">
+
+    <ImageView
+        android:layout_width="293dp"
+        android:layout_height="291dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/congratulations"/>
+
+    <TextView
+        android:layout_width="224dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Pesanan Anda telah Diterima"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Barang Anda telah dikemas sebentar lagi dikirim"/>
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_round"
+        android:text="Lacak Order" />
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="323dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:text="Kembali Belanja" />
+
+
+</LinearLayout>

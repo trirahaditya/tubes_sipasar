@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_login">
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="72dp"
+        android:src="@drawable/wortel_warna"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Daftar"
+        android:layout_marginRight="135dp"
+        android:fontFamily="@font/gilroy"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan data diri anda untuk melanjutkan"
+        android:layout_marginRight="38dp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginRight="125dp"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="340dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:hint="username"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/under_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginRight="144dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:hint="username@mail.com"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/under_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginRight="125dp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:text="*******" />
+
+    <ImageView
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/under_line"/>
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="11dp"
+        android:text="Dengan Melanjutkan Anda Menyetujui Persyaratan Layanan kami dan Kebijakan Privasi" />
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_round"
+        android:text="Daftar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Memiliki Akun ?"/>
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Masuk"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

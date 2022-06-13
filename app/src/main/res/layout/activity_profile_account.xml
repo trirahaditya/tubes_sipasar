@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_account"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_login">
+
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_person_account"/>
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+
+
+        <EditText
+            android:id="@+id/detnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/hk_grotesk"
+            android:hint="nama"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/detmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/hk_grotesk"
+            android:hint="mail.com"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/dettelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/hk_grotesk"
+            android:hint="+62"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/detalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/hk_grotesk"
+            android:hint="Alamat"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="351dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="75sp"
+        android:background="@drawable/button_logout"
+        android:fontFamily="@font/hk_grotesk"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+
+</LinearLayout>

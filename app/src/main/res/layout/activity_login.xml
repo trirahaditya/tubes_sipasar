@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="72dp"
+        android:src="@drawable/wortel_warna"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Masuk"
+        android:layout_marginRight="130dp"
+        android:fontFamily="@font/gilroy"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan input Email dan Password"
+        android:layout_marginRight="65dp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="15dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginRight="122dp"/>
+
+    <EditText
+        android:id="@+id/editmail"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:hint="username"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/under_line" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginRight="125dp"/>
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:text="*******" />
+
+    <ImageView
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/under_line"/>
+
+    <TextView
+        android:id="@+id/lupapass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Lupa Password?"
+        />
+
+    <CheckBox
+        android:id="@+id/cekpass"
+        android:layout_width="336dp"
+        android:layout_height="77dp"
+        android:fontFamily="@font/gilroy"
+        android:text="Show Password" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="75sp"
+        android:background="@drawable/button_round"
+        android:text="Masuk"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Memiliki Akun ?"/>
+
+        <TextView
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Daftar"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+
+</LinearLayout>

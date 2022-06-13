@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".error"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/field_error">
+
+
+    <ImageView
+        android:layout_width="282dp"
+        android:layout_height="283dp"
+        android:src="@drawable/ic_shoping_cart_error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Oops! Order Gagal"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Terjadi Kesalahan"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="327dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_round"
+        android:text="Coba lagi" />
+
+    <Button
+        android:layout_width="327dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+       android:textColor="@color/black"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="Coba lagi" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belanjaFragment"
+    android:id="@+id/fragment_belanja_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".belanja">
+
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/wortel_warna" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/lokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/lokasi" />
+
+                    <TextView
+                        android:id="@+id/namalokasi"
+                        android:layout_width="73dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Denpasar"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="261dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_search"
+                    android:backgroundTint="@color/grey"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:hint="Cari Toko"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:layout_width="323dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/banner" />
+
+                <LinearLayout
+
+                    android:layout_width="398dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="125dp"
+                        android:layout_weight="2"
+                        android:text="Penawaran Khusus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"
+                        android:textColor="@color/green" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <include layout="@layout/activity_menu_pemblanjaan1" />
+                </HorizontalScrollView>
+
+                <LinearLayout
+
+                    android:layout_width="398dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="125dp"
+                        android:layout_weight="2"
+                        android:text="Beli Sekarang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"
+                        android:textColor="@color/green" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="297dp"
+                    android:layout_height="114dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/banner_beras" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="45dp"
+                    android:scrollbars="none">
+
+                    <include layout="@layout/activity_menu_pembelanjaan2" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>
